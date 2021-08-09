@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qMJOzhsgRjlS8qQkUD9kY9G0ZsVVP6ITqTgyqNVt+0YyCvfZ7u68FMzM5eJKe+ahp/EluSCqlWyzpcYrUQKASA==",
+  "dgSpecHash": "WLLfuWC2docBE3vKLcVeinahn5PilO00H5LUfcwj/EglVoYwzfTQ0pDrWvTGYZo8s/qbj/NUnEO0er/cX8JykQ==",
   "success": true,
-  "projectFilePath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasDAL\\BlueModasDAL.csproj",
+  "projectFilePath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasDAL\\BlueModasDAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rossado\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Rossado\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Xh8JIDW60ArQS0IPOtrihCFcKA4SJWt1CvvpvIuMnAl//ckV3RyRv/OGJvkStUaR7pMTdWD1pnDIRdWa85PWw==",
+  "dgSpecHash": "2sgR+28jP4S4KRIbVsCByc+DIx4ONmktt5rCH6j+D0EnqlxFZJT/VHaAH9TsLwwsbUszo+GAoB97eU+W84lV6Q==",
   "success": true,
-  "projectFilePath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModas\\BlueModasAPI.csproj",
+  "projectFilePath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModas\\BlueModasAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rossado\\.nuget\\packages\\automapper\\8.0.0\\automapper.8.0.0.nupkg.sha512",
     "C:\\Users\\Rossado\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.0.0\\automapper.extensions.microsoft.dependencyinjection.6.0.0.nupkg.sha512",

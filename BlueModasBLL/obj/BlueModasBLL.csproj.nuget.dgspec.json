@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasBLL\\BlueModasBLL.csproj": {}
+    "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasBLL\\BlueModasBLL.csproj": {}
   },
   "projects": {
-    "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasBLL\\BlueModasBLL.csproj": {
+    "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasBLL\\BlueModasBLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasBLL\\BlueModasBLL.csproj",
+        "projectUniqueName": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasBLL\\BlueModasBLL.csproj",
         "projectName": "BlueModasBLL",
-        "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasBLL\\BlueModasBLL.csproj",
+        "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasBLL\\BlueModasBLL.csproj",
         "packagesPath": "C:\\Users\\Rossado\\.nuget\\packages\\",
-        "outputPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasBLL\\obj\\",
+        "outputPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasBLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rossado\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasDAL\\BlueModasDAL.csproj": {
-                "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasDAL\\BlueModasDAL.csproj"
+              "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasDAL\\BlueModasDAL.csproj": {
+                "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasDAL\\BlueModasDAL.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasDAL\\BlueModasDAL.csproj": {
+    "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasDAL\\BlueModasDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasDAL\\BlueModasDAL.csproj",
+        "projectUniqueName": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasDAL\\BlueModasDAL.csproj",
         "projectName": "BlueModasDAL",
-        "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasDAL\\BlueModasDAL.csproj",
+        "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasDAL\\BlueModasDAL.csproj",
         "packagesPath": "C:\\Users\\Rossado\\.nuget\\packages\\",
-        "outputPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasDAL\\obj\\",
+        "outputPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasDAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rossado\\AppData\\Roaming\\NuGet\\NuGet.Config",

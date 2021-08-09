@@ -5922,11 +5922,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModas\\BlueModasAPI.csproj",
+      "projectUniqueName": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModas\\BlueModasAPI.csproj",
       "projectName": "BlueModasAPI",
-      "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModas\\BlueModasAPI.csproj",
+      "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModas\\BlueModasAPI.csproj",
       "packagesPath": "C:\\Users\\Rossado\\.nuget\\packages\\",
-      "outputPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModas\\obj\\",
+      "outputPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rossado\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5943,14 +5943,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasBLL\\BlueModasBLL.csproj": {
-              "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasBLL\\BlueModasBLL.csproj"
+            "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasBLL\\BlueModasBLL.csproj": {
+              "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasBLL\\BlueModasBLL.csproj"
             },
-            "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasDAL\\BlueModasDAL.csproj": {
-              "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\BlueModasDAL\\BlueModasDAL.csproj"
+            "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasDAL\\BlueModasDAL.csproj": {
+              "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\BlueModasDAL\\BlueModasDAL.csproj"
             },
-            "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\DTO\\BlueModasDTO.csproj": {
-              "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\DTO\\BlueModasDTO.csproj"
+            "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\DTO\\BlueModasDTO.csproj": {
+              "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\DTO\\BlueModasDTO.csproj"
             }
           }
         }

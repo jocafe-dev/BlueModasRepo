@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4u3pqGckGCk9awS8wZcpzPzQia8trggr+HDgk+/AjIu+dqUpOA+OOBVrUpzOV1QZxCb7UeoCCuaK3RfDAM+87g==",
+  "dgSpecHash": "QJXAy3gocgVZYKXnUG9DdE4Ffy9kSBydKUr6EC5sLaYyKn+7uRD5fRg6haeFLwmMG8AJVsQtq09XrpRuSBXYng==",
   "success": true,
-  "projectFilePath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\DTO\\BlueModasDTO.csproj",
+  "projectFilePath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\DTO\\BlueModasDTO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rossado\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Rossado\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

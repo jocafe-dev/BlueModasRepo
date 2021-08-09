@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\DTO\\BlueModasDTO.csproj": {}
+    "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\DTO\\BlueModasDTO.csproj": {}
   },
   "projects": {
-    "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\DTO\\BlueModasDTO.csproj": {
+    "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\DTO\\BlueModasDTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\DTO\\BlueModasDTO.csproj",
+        "projectUniqueName": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\DTO\\BlueModasDTO.csproj",
         "projectName": "BlueModasDTO",
-        "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\DTO\\BlueModasDTO.csproj",
+        "projectPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\DTO\\BlueModasDTO.csproj",
         "packagesPath": "C:\\Users\\Rossado\\.nuget\\packages\\",
-        "outputPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasAPI\\DTO\\obj\\",
+        "outputPath": "D:\\Jonatas Carvalho\\BlueModasRepo\\JET\\BlueModasRepo\\DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rossado\\AppData\\Roaming\\NuGet\\NuGet.Config",
