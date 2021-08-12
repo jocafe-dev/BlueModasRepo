@@ -12,6 +12,9 @@ import { ShoppingCartService } from './services/shopping-cart.service';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { HomeComponent } from './home/home.component';
     HttpClientModule,
     TooltipModule,
     ModalModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [
     ProductService,

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { ProductModel } from '../models/product.model';
 import { ProductService } from '../services/product.service';
 import { ShoppingCartService } from '../services/shopping-cart.service';
@@ -16,7 +17,7 @@ export class HomeComponent {
     this.loadProductCards();
   }
 
-  constructor(private _productService: ProductService, private _shoppingCartService: ShoppingCartService) {
+  constructor(private _productService: ProductService, private _shoppingCartService: ShoppingCartService, private _toast:ToastrService) {
   }
 
   loadProductCards() {
@@ -28,5 +29,10 @@ export class HomeComponent {
 
   selectedProduct(item: ProductModel) {
     this._shoppingCartService.dispatch(item);
+    this._toast.success(`${item.name} foi adicionado ao carrinho.`, "Adicionado com sucesso",{
+      timeOut: 3000,
+      positionClass: 'toast-bottom-right',
+
+    })
   }
 }
