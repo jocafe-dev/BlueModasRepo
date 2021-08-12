@@ -1,0 +1,38 @@
+<section>
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Preço (R$)</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let item of shoppingCart; let i = index">
+                    <tr>
+                        <td>{{item.name}}</td>
+                        <td>R$ {{item.price}}</td>
+                        <td>
+                            <input type="number" [(ngModel)]="shoppingCart[i].quantity"> Und.
+                        </td>
+                        <td>R$ {{item.price * item.quantity | number}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <div *ngIf="shoppingCart.length == 0">
+                <div class="row col-12 py-5 mt-5 justify-content-center">
+                    <h4 class="text-center fs-3 text py-5">Sem produtos Adicionados...</h4>
+                    <button class="col-4 py-2 btn my-4 fs-4 text btn-primary align-self-center"
+                        (click)="goToHomeComponent()">
+                        Voltar Para Página Inicial
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

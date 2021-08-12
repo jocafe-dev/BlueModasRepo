@@ -6,6 +6,7 @@ import { ProductModel } from "../models/product.model";
 })
 export class ShoppingCartService{
     @Output() shoppingCart : EventEmitter<ProductModel>;
+    private shoppingCartState: ProductModel[] = [];
 
     constructor() {
         this.shoppingCart = new EventEmitter<ProductModel>();
@@ -13,7 +14,8 @@ export class ShoppingCartService{
 
     dispatch(shoppingCart: ProductModel){
         this.shoppingCart.emit(shoppingCart);
+        this.shoppingCartState.push(shoppingCart);
     }
 
-    getState = () => this.shoppingCart;
+    getState = () => this.shoppingCartState;
 }
