@@ -21,7 +21,11 @@ namespace BlueModasBLL.Services
         #region Methods
         public IEnumerable<ClientModel> GetAllClients()
         {
-            return _clientRepository.GetAllClients();
+            var obj = _clientRepository.GetAllClients();
+
+            var price = obj.ToString();
+
+            return obj;
         }
         #endregion
     }

@@ -1,12 +1,13 @@
 export class ProductModel {
 
-  id: number = 0;
-  name: string = "";
-  price: any = null;
-  inventory: any = null;
-  image: any = null;
-  description: any = null;
-  status: any = null;
+  id: number;
+  name: string;
+  price: number;
+  quantity: number;
+  inventory: number;
+  image: string;
+  description: string;
+  status: boolean = false;
 
   constructor() {
   }

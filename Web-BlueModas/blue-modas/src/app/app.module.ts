@@ -6,25 +6,31 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProductService } from './services/product.service';
-import { HomeModule } from './home/home.module';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { ShoppingCartService } from './services/shopping-cart.service';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ShoppingCartComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BsDropdownModule,
     HttpClientModule,
-    HomeModule,
     TooltipModule,
-    ModalModule
+    ModalModule,
+    FontAwesomeModule
   ],
   providers: [
     ProductService,
+    ShoppingCartService
   ],
   exports: [RouterModule, BsDropdownModule, TooltipModule, ModalModule],
   bootstrap: [AppComponent],

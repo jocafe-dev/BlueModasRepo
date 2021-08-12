@@ -254,3 +254,4 @@ D:\Jonatas Carvalho\BlueModasRepo\API-BlueModas\BlueModas\obj\Debug\net5.0\BlueM
 D:\Jonatas Carvalho\BlueModasRepo\API-BlueModas\BlueModas\obj\Debug\net5.0\ref\BlueModasAPI.dll
 D:\Jonatas Carvalho\BlueModasRepo\API-BlueModas\BlueModas\obj\Debug\net5.0\BlueModasAPI.pdb
 D:\Jonatas Carvalho\BlueModasRepo\API-BlueModas\BlueModas\obj\Debug\net5.0\BlueModasAPI.genruntimeconfig.cache
+D:\Jonatas Carvalho\BlueModasRepo\API-BlueModas\BlueModas\bin\Debug\net5.0\web.config

@@ -8,19 +8,12 @@ import { ProductService } from './services/product.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  products: ProductModel[] = [];
 
   ngOnInit() {
-    this.loadProductCards();
   }
 
-  constructor(private _productService: ProductService) {
+  constructor() {
   }
 
-  loadProductCards() {
-    this._productService
-      .getAll()
-      .toPromise()
-      .then(ret => this.products = ret);
-  }
+  
 }
