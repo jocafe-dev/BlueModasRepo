@@ -3,7 +3,6 @@ import { ShoppingCartService } from 'src/app/services/shopping-cart.service';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { ProductModel } from 'src/app/models/product.model';
 import { Router } from '@angular/router';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ClientService } from '../services/client.service';
 import { ClientModel } from '../models/client.model';
 
@@ -13,31 +12,29 @@ import { ClientModel } from '../models/client.model';
   styleUrls: ['./confirmed-order.component.scss']
 })
 export class ConfirmedOrderComponent implements OnInit {
-  faShoppingCart = faShoppingCart;
   shoppingCart: ProductModel[] = [];
-  clientModel: ClientModel[] = [];
+  clientInputed: ClientModel;
+  orderNumber: string = "ORN-XW7000001QJC"
 
   constructor(
-    private _shoppingCartService: ShoppingCartService,
     private _clientService: ClientService,
+    private _shoppingCartService: ShoppingCartService,
     private _router: Router) { }
 
   ngOnInit() {
     this.getState();
-    this._clientService
-    .getAll()
-    .toPromise()
-    .then(ret => {
-      this.clientModel = ret;
-    })
+    this.getStateClient();
   }
 
   getState() {
     this.shoppingCart = this._shoppingCartService.getState();
   }
 
-  goToClientIdentification() {
-    this._router.navigate(['/client-identification']);
+  getStateClient() {
+    this.clientInputed = this._clientService.getState();
   }
 
+  goToHomeComponent() {
+    this._router.navigate(['']);
+  }
 }

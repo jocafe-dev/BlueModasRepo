@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ShoppingCartService } from 'src/app/services/shopping-cart.service';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { ProductModel } from 'src/app/models/product.model';
-import { Router } from '@angular/router';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ShoppingDetailComponent } from '../shopping-cart/shopping-details/shopping-details.component';
-import { ClientService } from '../services/client.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ClientModel } from '../models/client.model';
+import { UtilService } from '../services/util.service';
+import { NotificationService } from '../services/notification.service';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
+import { ClientService } from '../services/client.service';
 
 @Component({
   selector: 'client-identification',
@@ -14,47 +15,70 @@ import { ClientModel } from '../models/client.model';
   styleUrls: ['./client-identification.component.scss']
 })
 export class ClientIdentificationComponent implements OnInit {
-  faShoppingCart = faShoppingCart;
-  shoppingCart: ProductModel[] = [];
   clientIdentificationForm: FormGroup;
-  clientModel: ClientModel[] = [];
+  shoppingCart: ProductModel[] = [];
+  clientModel: ClientModel;
 
   constructor(
-    private _shoppingCartService: ShoppingCartService,
+    private _fb: FormBuilder,
     private _clientService: ClientService,
-    private _router: Router) { }
+    private _shoppingCartService: ShoppingCartService,
+    private _notificationService: NotificationService,
+    private _toast: ToastrService,
+    private _router: Router,
+    private _utilService: UtilService) {
 
+    this.clientIdentificationForm = this._fb.group({
+      name: [null, Validators.required],
+      email: [null, Validators.required],
+      phone: [null, Validators.required],
+    });
+
+  }
 
   ngOnInit() {
     this.getState();
-    this._clientService
-    .getAll()
-    .toPromise()
-    .then(ret => {
-      this.clientModel = ret;
-    })
-    this.clientIdentificationForm = new FormGroup({
-      // name: new FormControl(this.clientModel[0].name, [
-      //   Validators.required,
-      //   Validators.minLength(2),
-      // ]),
-      // email: new FormControl(this.clientModel[0].email, [
-      //   Validators.required,
-      //   Validators.minLength(6),
-      // ]),
-      // phone: new FormControl(this.clientModel[0].phone, [
-      //   Validators.required,
-      //   Validators.minLength(8),
-      // ]),
-    });
+    this.loadClient(this.clientModel);
+  }
+
+  loadClient(client: ClientModel) {
+    this.clientIdentificationForm.patchValue(client);
   }
 
   getState() {
     this.shoppingCart = this._shoppingCartService.getState();
   }
 
-  goToConfirmedOrder() {
+  goToConfirmedOrder(clientInputed: ClientModel) {
+    this.clientInputed(clientInputed)
+    this.save();
     this._router.navigate(['/confirmed-order']);
   }
 
+  save() {
+    if (!this.clientIdentificationForm.valid) {
+      this._utilService.FormValidate(this.clientIdentificationForm);
+    }
+    // this._clientService
+    //   .save(this.clientIdentificationForm.value)
+    //   .toPromise()
+    //   .then(ret => {
+    //     this._notificationService.success("Salvo com Sucesso");
+    //   }).catch(_ => {
+    //     this._notificationService.error(_.error[0].value);
+    //   });
+  }
+
+  clientInputed(clientInputed: ClientModel) {
+    console.log(clientInputed)
+    this._clientService.dispatch(clientInputed);
+    this._toast.success(`Compra finalizada com sucesso!`, "Identificação Concluída.", {
+      timeOut: 3000,
+      positionClass: 'toast-bottom-right',
+    })
+  }
+
+  getStateClient() {
+    this.clientModel = this._clientService.getState();
+  }
 }

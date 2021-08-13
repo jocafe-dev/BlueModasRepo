@@ -16,10 +16,12 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ShoppingDetailComponent } from './shopping-cart/shopping-details/shopping-details.component';
 import { AppLoading } from './loading/loading.component';
-import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClientIdentificationComponent } from './client-identification/client-identification.component';
 import { ClientService } from './services/client.service';
 import { ConfirmedOrderComponent } from './confirmed-order/confirmed-order.component';
+import { UtilService } from './services/util.service';
+import { NotificationService } from './services/notification.service';
 
 
 @NgModule({
@@ -34,6 +36,8 @@ import { ConfirmedOrderComponent } from './confirmed-order/confirmed-order.compo
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BsDropdownModule,
     HttpClientModule,
@@ -46,8 +50,11 @@ import { ConfirmedOrderComponent } from './confirmed-order/confirmed-order.compo
     BrowserAnimationsModule
   ],
   providers: [
+    FormBuilder,
+    UtilService,
     ClientService,
     ProductService,
+    NotificationService,
     ShoppingCartService
   ],
   exports: [RouterModule, BsDropdownModule, TooltipModule, ModalModule],
